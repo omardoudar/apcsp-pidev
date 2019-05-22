@@ -10,7 +10,8 @@ int main()
   a = 2;
   c = a + b;
   printf("Sum of %d and %d is %d\n", a, b, c);
-  a = tmp;
-  c = a;
-  tmp = c;
+  tmp = a;
+  a = c;
+  c = tmp;
+  printf("A is %d B is %d and C is %d\n", a, b, c);
 }
